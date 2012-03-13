@@ -1,0 +1,31 @@
+<html>
+<head>
+ <title>JavaScript Page</title>
+ <script type="text/javascript">
+  window.alert("The page is loading.");
+ </script>
+</head>
+<body>
+<form>
+ Click the button to turn the page
+ 
+ <span onclick="document.bgColor = 'red';"> <input type="button" value="Red"/> </span> 
+ <br/><br/>
+ Double click the button to turn the page
+ <span ondblclick="document.bgColor = 'green';"> <input type="button" value="Green"/> </span> 
+ <br/><br/>
+ Click down on the button to turn the page
+ <span onmousedown="document.bgColor = 'orange';"
+	   onmouseup="document.bgColor = 'white';"> 
+	   <input type="button" value="Orange"/> </span> 
+ <br/><br/>
+ Release the mouse while on the button to turn the page
+ <span onmouseover="document.bgColor = 'blue';" 
+	   onmouseout="document.bgColor = 'white';"> 
+	   <input type="button" value="Blue"/> 
+ </span> 
+</form>
+<hr/>
+<script type="text/javascript" src="Script.js"></script>
+</body>
+</html>
