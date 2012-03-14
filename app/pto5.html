@@ -12,16 +12,21 @@
                     function(data){
                         $("#result").html(data);
                     });
+                    $("#result").ajaxError( function(event, request, settings ){
+                        $("#result").html("Fallo la carga!!!");
+         		$('#result').css({ 'color' : 'red' });
+                        alert("ERROR");
+                    }); 
                 });
             });
         </script>
     </head>
     <body>
-		<h2> Punto 5 </h2>
-		<textarea id="alias"> Ingrese su nombre </textarea>
-		<br>
+	<h2> Punto 5 </h2>
+	<textarea id="alias"> Ingrese su nombre </textarea>
+	<br>
         <button id="buttonPto5" > HELLO </button>
-		<br>
-        <div id="result" class="res"> RESULTADO  </div>
+	<br>
+        <div id="result"> RESULTADO  </div>
     </body>
 </html>
