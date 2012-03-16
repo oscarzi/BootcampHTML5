@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Multi-page template</title> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.js"></script>
+
+</head> 
+
+	
+<body> 
+
+<!-- Start of first page: #one -->
+<div data-role="page" id="one">
+
+	<div data-role="header">
+		<h1>Multiples páginas</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" >	
+		<h2>Primera página</h2>
+                
+                <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="a">
+                    <li data-role="list-divider">MENU</li>
+                    <li><a href="#one" data-transition="slide">Ir a la página uno</a></li>
+                    <li><a href="#two" data-transition="pop">Ir a la página dos</a></li>
+                    <li><a href="#three" data-transition="flow">Ir a la página tres</a></li>
+                </ul>
+                
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d">
+		<h4>Pie de página</h4>
+	</div><!-- /footer -->
+</div><!-- /page one -->
+
+
+<!-- Start of second page: #two -->
+<div data-role="page" id="two" data-theme="a">
+
+	<div data-role="header">
+		<h1>Multiples páginas</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" >	
+		<h2>Segunda página</h2>
+
+                <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="a">
+                    <li data-role="list-divider">MENU</li>
+                    <li><a href="#one" data-transition="slide">Ir a la página uno</a></li>
+                    <li><a href="#two" data-transition="pop">Ir a la página dos</a></li>
+                    <li><a href="#three" data-transition="flow">Ir a la página tres</a></li>
+                </ul>
+                
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d">
+		<h4>Pie de página</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<!-- Start of third page: #three -->
+<div data-role="page" id="three" data-theme="b">
+
+	<div data-role="header">
+		<h1>Multiples páginas</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" >	
+		<h2>Tercera página</h2>
+               
+                <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="a">
+                    <li data-role="list-divider">MENU</li>
+                    <li><a href="#one" data-transition="slide">Ir a la página uno</a></li>
+                    <li><a href="#two" data-transition="pop">Ir a la página dos</a></li>
+                    <li><a href="#three" data-transition="flow">Ir a la página tres</a></li>
+                </ul>
+                
+	</div><!-- /content -->
+
+	
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div><!-- /footer -->
+</div><!-- /page three -->
+
+</body>
+</html>
