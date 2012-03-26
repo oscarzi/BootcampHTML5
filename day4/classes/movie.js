@@ -8,7 +8,6 @@ var Movie = function(myTitle){
     this.setTitle = function(title){title = title} 
 } 
 
- 
  /**
  * Nuestro suscriptor
  */
@@ -68,19 +67,19 @@ MovirHarry.stop();
 
 //************* extends from Movie ****************
 
+
+var DownloadableMovie = function(myTitle){
+    // Primero se añade una referencia al constructor padre,
+    // y después se llama explícitamente.
+    this.superConstructor = Movie;
+    this.superConstructor(myTitle);
+    this.download = function() {
+        console.log("Downloading movie: " + this.getTitle());
+    }
+}
+
 DownloadableMovie.prototype = new Movie();
-DownloadableMovie.prototype.constructor=DownloadableMovie;
-
-function DownloadableMovie(myTitle){ 
-    this.setTitle(myTitle);
-}
-
-DownloadableMovie.prototype.download = function() {
-    console.log("Downloading movie: " + this.getTitle());
-}
-
 var MovieTerminator1 = new DownloadableMovie('terminator1');
-
 
 // Suscribimos los observadores
 MovieTerminator1.suscribir(uno);
@@ -94,7 +93,6 @@ MovieTerminator1.stop('terminator');
 
 ///****** Social Mixin
 
-	 
 	// Mixin
 	var Mixin = function(){};
 	Mixin.prototype = {
@@ -115,24 +113,11 @@ MovieTerminator1.stop('terminator');
 	      receivingClass.prototype[arguments[i]] = givingClass.prototype[arguments[i]];
 	    }
 	  }
-//	  // provide all methods
-//	  else {
-//	    for ( var methodName in givingClass.prototype ) {
-//	      /* check to make sure the receiving class doesn't
-//	         have a method of the same name as the one currently
-//	         being processed */
-//	      if ( !receivingClass.prototype[methodName] ) {
-//	        receivingClass.prototype[methodName] = givingClass.prototype[methodName];
-//	      }
-//	    }
-//	  }
 	}
-	 	 
-	
 	augment( Movie, Mixin,'share','like' );
 //        
-//        Movie.prototype['share'] = Mixin.prototype['share'];
-//        Movie.prototype['like'] = Mixin.prototype['like'];
+//      Movie.prototype['share'] = Mixin.prototype['share'];
+//      Movie.prototype['like'] = Mixin.prototype['like'];
 //	 
         
         var ironman2 = new Movie("Iron Man 2");
