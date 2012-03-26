@@ -4,7 +4,7 @@
             <p>Edad: {{age}}</p>\
             <p>Estado Civil: {{civilstate}}</p>\
             <p>Ciudad: {{city}}</p>\
-            <p>Pais: {{company}}</p>\
+            <p>Pais: {{country}}</p>\
             <p>Carrera: {{carrer}}</p>\
             <p>Universidad: {{university}}</p>\
             <p>Telefono: {{phone}}</p>\
