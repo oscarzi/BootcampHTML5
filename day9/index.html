@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Day 9,10: MVC & Mixins</title>
+
+		<script src="scripts/jquery-1.7.1.js"></script>
+		<script src="scripts/underscore.js"></script>
+		<script src="scripts/backbone-min.js"></script>
+                
+	</head>
+	<body>
+		<div data-role="content" id="container">
+                        <div id="myMovies"> 
+                            <h3>Mis Peliculas Favoritas</h3>
+                                <span><input type='button' value='Mis Pelis' class='addMyMovies'></input></span>
+                            <ul id="myList">
+                            </ul>
+                        </div>
+			<div id="yourMovies">
+                            <h3>Ingrese sus Peliculas Favoritas</h3>
+                            <input type="text" id="addMovie"></input>
+			    <h2>Tus Peliculas</h2>
+                            <ul id="tuList"> </ul>
+                        </div>
+		</div>	
+            <script src="scripts/movie.js"></script>
+	</body>	
+</html>
